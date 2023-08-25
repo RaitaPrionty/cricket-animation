@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is a cricket animation</title>
+    <style>
+        .field{
+            height: 300px;
+            width: 900px;
+            background-color: green;
+        }
+        
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            transform: translateX(110px);
+            position: relative;
+            bottom: 60px;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: transform 1s ease-in;
+        }
+        .field:hover .ball{
+            transform: translate(800px, -200px);
+            transition: transform 1s ease-out 0.2s;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>this is a cricket animation</h1>
+    <div class="field">
+       
+            <img class="bat" style="height: 300px; width: 100px;" src="../images/bat.jpg" alt="">
+        
+        <div class="ball">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+        
+  
